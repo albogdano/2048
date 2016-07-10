@@ -130,7 +130,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
           
           // The mighty 0xff tile
-          if (merged.value === 255) self.won = true;
+          if (merged.value === -1) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
